@@ -1,21 +1,21 @@
+import React from "react";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
+import Features from "./components/Features";
+import HowItWorks from "./components/HowItWorks";
+import Footer from "./components/Footer";
 
 function App() {
     return (
-        <>
+        <div className="min-h-screen bg-[#07192C] flex flex-col">
             <Navbar />
-            <Header />
-            <div className="mt-12">
-                <h1 className="text-center text-[48px] font-albertSans">
-                    How our product works
-                </h1>
-                <p className="font-albertSans text-[24px] text-center">
-                    Convert your waste products into tokens on the{" "}
-                    <span className="font-semibold">blockchain.</span>
-                </p>
-            </div>
-        </>
+            <main className="flex-grow">
+                <Header />
+                <Features />
+                <HowItWorks />
+            </main>
+            <Footer />
+        </div>
     );
 }
 

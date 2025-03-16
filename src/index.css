@@ -7,3 +7,10 @@
 body {
     color: black;
 }
+.gradient-bg {
+    background: linear-gradient(
+        210.39deg,
+        #31c61d 4.11%,
+        rgba(0, 174, 230, 0.901961) 88.82%
+    );
+}
