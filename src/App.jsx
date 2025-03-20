@@ -1,21 +1,16 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import Header from "./components/Header";
-import Features from "./components/Features";
-import HowItWorks from "./components/HowItWorks";
-import Footer from "./components/Footer";
+import LandingPage from "./pages/LandingPage";
+import Signup from "./pages/Signup";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
     return (
-        <div className="min-h-screen bg-[#07192C] flex flex-col">
-            <Navbar />
-            <main className="flex-grow">
-                <Header />
-                <Features />
-                <HowItWorks />
-            </main>
-            <Footer />
-        </div>
+        <Router>
+            <Routes>
+                <Route path="/" element={<LandingPage />} />
+                <Route path="/signup" element={<Signup />} />
+            </Routes>
+        </Router>
     );
 }
 

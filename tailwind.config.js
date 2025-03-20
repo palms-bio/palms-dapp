@@ -6,7 +6,7 @@ export default {
             fontFamily: {
                 plusJakartaSans: ["Plus Jakarta Sans", "sans-serif"],
                 aldrich: ["Aldrich", "sans-serif"],
-                albertSans: ["Albert-Sans", "sans-serif"],
+                albertSans: ["Albert Sans", "sans-serif"],
             },
             colors: {
                 primary: "#31C61D",
