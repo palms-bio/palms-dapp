@@ -1,6 +1,7 @@
 import React from "react";
 import dashboardGraph from "../../assets/dashboardGraph.png";
-import { Beaker, Gauge, Leaf } from "lucide-react";
+import { Beaker, Gauge, Leaf, User } from "lucide-react";
+import Activities from "./Activities";
 const Dashboard = () => {
     return (
         <div className="border border-[#F5F5F50D] py-12 px-8 w-full">
@@ -49,6 +50,7 @@ const Dashboard = () => {
                     </div>
                 </div>
             </div>
+            <Activities />
         </div>
     );
 };
