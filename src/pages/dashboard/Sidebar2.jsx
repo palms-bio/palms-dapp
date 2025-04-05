@@ -1,6 +1,6 @@
 import React from "react";
-import AccountCard from "./ui/AccountCard";
-import NotificationCard from "./ui/NotificationCard";
+import AccountCard from "./dashboard-ui/AccountCard";
+import NotificationCard from "./dashboard-ui/NotificationCard";
 
 const Sidebar2 = () => {
     return (

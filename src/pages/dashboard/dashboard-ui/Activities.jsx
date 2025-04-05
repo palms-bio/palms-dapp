@@ -1,6 +1,6 @@
 import React from "react";
-import UserActivity from "./ui/UserActivity";
-import Contributors from "./ui/Contributors";
+import UserActivity from "./UserActivity";
+import Contributors from "./Contributors";
 
 const Activities = () => {
     return (
