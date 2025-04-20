@@ -8,6 +8,8 @@ import GetDigester from "./pages/GetDigester";
 import Dashboard from "./pages/dashboard/Dashboard";
 import DashboardLayout from "./pages/dashboard/DashboardLayout";
 import Marketplace from "./pages/dashboard/Marketplace";
+import EnergyAsset from "./pages/dashboard/EnergyAsset";
+import Admin from "./pages/dashboard/Admin";
 
 function App() {
     return (
@@ -21,6 +23,8 @@ function App() {
                 <Route path="/dashboard" element={<DashboardLayout />}>
                     <Route index element={<Dashboard />} />
                     <Route path="marketplace" element={<Marketplace />} />
+                    <Route path="energy-asset" element={<EnergyAsset />} />
+                    <Route path="admin" element={<Admin />} />
                 </Route>
             </Routes>
         </Router>

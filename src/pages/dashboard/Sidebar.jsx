@@ -48,7 +48,7 @@ const Sidebar = () => {
                     </li>
                     <li>
                         <a
-                            href="/dashboard/marketplace"
+                            href="/dashboard/energy-asset"
                             className="flex space-x-2 justify-center"
                         >
                             <Zap />{" "}
@@ -62,7 +62,7 @@ const Sidebar = () => {
                 <ul className="font-albertSans flex flex-col space-y-8 mt-5 items-center">
                     <li>
                         <a
-                            href="/dashboard"
+                            href="/dashboard/admin"
                             className="flex space-x-2 justify-center"
                         >
                             <CircleUser />{" "}
