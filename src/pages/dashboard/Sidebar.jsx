@@ -113,7 +113,7 @@ const Sidebar = () => {
                     </li>
                     <li>
                         <a
-                            href="/dashboard/marketplace"
+                            href="/dashboard/gas"
                             className="flex space-x-2 justify-center"
                         >
                             <Flame /> <span className="inline-block">Gas</span>

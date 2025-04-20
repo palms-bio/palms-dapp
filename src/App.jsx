@@ -11,6 +11,7 @@ import Marketplace from "./pages/dashboard/Marketplace";
 import EnergyAsset from "./pages/dashboard/EnergyAsset";
 import Admin from "./pages/dashboard/Admin";
 import Rewards from "./pages/dashboard/Rewards";
+import Gas from "./pages/dashboard/Gas";
 
 function App() {
     return (
@@ -27,6 +28,7 @@ function App() {
                     <Route path="energy-asset" element={<EnergyAsset />} />
                     <Route path="admin" element={<Admin />} />
                     <Route path="rewards" element={<Rewards />} />
+                    <Route path="gas" element={<Gas />} />
                 </Route>
             </Routes>
         </Router>
