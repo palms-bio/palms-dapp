@@ -20,6 +20,8 @@ export default {
             backgroundImage: {
                 "gradient-primary":
                     "linear-gradient(210.39deg, #31C61D 4.11%, rgba(0, 174, 230, 0.901961) 88.82%)",
+                "gradient-shade":
+                    "linear-gradient(210.39deg, #07192C 4.11%, #233447 88.82%)",
             },
         },
     },
