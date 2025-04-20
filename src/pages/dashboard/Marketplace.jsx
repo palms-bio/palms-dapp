@@ -2,6 +2,18 @@ import React from "react";
 import LiveSales from "./marketplace-ui/LiveSales";
 import TokenPrice from "./marketplace-ui/TokenPrice";
 import { SlidersHorizontal } from "lucide-react";
+import green from "../../assets/svg/green.svg";
+const marketPlaceItems = [
+    { listAddress: "0x32...964", gas: 1.34, strk: 0.56, image: green },
+    { listAddress: "0x32...964", gas: 1.34, strk: 0.56, image: green },
+    { listAddress: "0x32...964", gas: 1.34, strk: 0.56, image: green },
+    { listAddress: "0x32...964", gas: 1.34, strk: 0.56, image: green },
+    { listAddress: "0x32...964", gas: 1.34, strk: 0.56, image: green },
+    { listAddress: "0x32...964", gas: 1.34, strk: 0.56, image: green },
+    { listAddress: "0x32...964", gas: 1.34, strk: 0.56, image: green },
+    { listAddress: "0x32...964", gas: 1.34, strk: 0.56, image: green },
+    { listAddress: "0x32...964", gas: 1.34, strk: 0.56, image: green },
+];
 
 const Marketplace = () => {
     return (
@@ -27,9 +39,9 @@ const Marketplace = () => {
                 </div>
                 <div className="grid grid-cols-3 gap-4 mt-4">
                     {marketPlaceItems.map((item) => (
-                        <div className="flex flex-col w-[252px] h-[292px]">
+                        <div className="flex flex-col w-full ">
                             <img
-                                src="/svg/green.svg"
+                                src={green}
                                 alt=""
                                 className="w-full inline-block"
                             />
@@ -52,6 +64,9 @@ const Marketplace = () => {
                                         </span>
                                     </p>
                                 </div>
+                                <button className="w-full border border-[#31C61D] text-[#31C61D] rounded-xl my-5 py-5">
+                                    Buy
+                                </button>
                             </div>
                         </div>
                     ))}
