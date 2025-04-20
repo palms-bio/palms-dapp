@@ -80,7 +80,7 @@ const Sidebar = () => {
                     </li>
                     <li>
                         <a
-                            href="/dashboard/marketplace"
+                            href="/dashboard/rewards"
                             className="flex space-x-2 justify-center"
                         >
                             <Gift />{" "}

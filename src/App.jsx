@@ -10,6 +10,7 @@ import DashboardLayout from "./pages/dashboard/DashboardLayout";
 import Marketplace from "./pages/dashboard/Marketplace";
 import EnergyAsset from "./pages/dashboard/EnergyAsset";
 import Admin from "./pages/dashboard/Admin";
+import Rewards from "./pages/dashboard/Rewards";
 
 function App() {
     return (
@@ -25,6 +26,7 @@ function App() {
                     <Route path="marketplace" element={<Marketplace />} />
                     <Route path="energy-asset" element={<EnergyAsset />} />
                     <Route path="admin" element={<Admin />} />
+                    <Route path="rewards" element={<Rewards />} />
                 </Route>
             </Routes>
         </Router>
