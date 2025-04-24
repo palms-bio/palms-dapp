@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -18,63 +19,63 @@ const Footer = () => {
                 <div className="w-full sm:w-auto">
                     <ul className="space-y-3 md:space-y-4">
                         <li>
-                            <a
-                                href="#products"
+                            <Link
+                                to="/getdigester"
                                 className="text-white hover:text-primary transition-colors"
                             >
                                 Products
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a
-                                href="#how-it-works"
+                            <Link
+                                to="/howitworks"
                                 className="text-white hover:text-primary transition-colors"
                             >
                                 Support
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a
-                                href="#blockchain"
+                            <Link
+                                to="/howitworks"
                                 className="text-white hover:text-primary transition-colors"
                             >
                                 How it works
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>
                 <div className="w-full sm:w-auto">
                     <ul className="space-y-3 md:space-y-4">
                         <li>
-                            <a
-                                href="#products"
+                            <Link
+                                to="/connect"
                                 className="text-white hover:text-primary transition-colors"
                             >
                                 Blockchain
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a
-                                href="#how-it-works"
+                            <Link
+                                to="/dashboard/gas"
                                 className="text-white hover:text-primary transition-colors"
                             >
                                 Gas
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a
-                                href="#blockchain"
+                            <Link
+                                to="/connect"
                                 className="text-white hover:text-primary transition-colors"
                             >
                                 Starknet
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>
                 <div className="w-full sm:w-auto flex justify-center md:justify-start">
-                    <button className="inline-block bg-[#07192C] w-[150px] h-[50px] text-white rounded-xl border border-white">
+                    <Link to="/getdigester" className="inline-block bg-[#07192C] w-[150px] h-[50px] text-white rounded-xl border border-white flex items-center justify-center">
                         Order Now
-                    </button>
+                    </Link>
                 </div>
             </div>
 
@@ -86,18 +87,18 @@ const Footer = () => {
                     </p>
                 </div>
                 <div className="flex space-x-4 mt-4 sm:mt-0">
-                    <a
-                        href="#how-it-works"
+                    <Link
+                        to="/privacy"
                         className="text-white hover:text-primary transition-colors inline-block"
                     >
                         Privacy
-                    </a>
-                    <a
-                        href="#how-it-works"
+                    </Link>
+                    <Link
+                        to="/terms"
                         className="text-white hover:text-primary transition-colors inline-block"
                     >
                         Terms
-                    </a>
+                    </Link>
                 </div>
             </div>
         </footer>
