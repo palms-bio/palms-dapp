@@ -12,26 +12,29 @@ import EnergyAsset from "./pages/dashboard/EnergyAsset";
 import Admin from "./pages/dashboard/Admin";
 import Rewards from "./pages/dashboard/Rewards";
 import Gas from "./pages/dashboard/Gas";
+import { StarknetProvider } from "./components/starknet-provider";
 
 function App() {
     return (
-        <Router>
-            <Routes>
-                <Route path="/" element={<LandingPage />} />
-                <Route path="/signup" element={<Signup />} />
-                <Route path="/connect" element={<ConnectWallet />} />
-                <Route path="/howitworks" element={<HowItWorks />} />
-                <Route path="/getdigester" element={<GetDigester />} />
-                <Route path="/dashboard" element={<DashboardLayout />}>
-                    <Route index element={<Dashboard />} />
-                    <Route path="marketplace" element={<Marketplace />} />
-                    <Route path="energy-asset" element={<EnergyAsset />} />
-                    <Route path="admin" element={<Admin />} />
-                    <Route path="rewards" element={<Rewards />} />
-                    <Route path="gas" element={<Gas />} />
-                </Route>
-            </Routes>
-        </Router>
+        <StarknetProvider>
+            <Router>
+                <Routes>
+                    <Route path="/" element={<LandingPage />} />
+                    <Route path="/signup" element={<Signup />} />
+                    <Route path="/connect" element={<ConnectWallet />} />
+                    <Route path="/howitworks" element={<HowItWorks />} />
+                    <Route path="/getdigester" element={<GetDigester />} />
+                    <Route path="/dashboard" element={<DashboardLayout />}>
+                        <Route index element={<Dashboard />} />
+                        <Route path="marketplace" element={<Marketplace />} />
+                        <Route path="energy-asset" element={<EnergyAsset />} />
+                        <Route path="admin" element={<Admin />} />
+                        <Route path="rewards" element={<Rewards />} />
+                        <Route path="gas" element={<Gas />} />
+                    </Route>
+                </Routes>
+            </Router>
+        </StarknetProvider>
     );
 }
 

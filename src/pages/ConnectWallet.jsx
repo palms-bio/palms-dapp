@@ -1,8 +1,6 @@
 import React from "react";
 import CornerLogo from "../components/CornerLogo";
-import argent from "../assets/svg/argent.svg";
-import braavos from "../assets/svg/braavos.svg";
-import metamask from "../assets/svg/metamask.svg";
+import ConnectButton from "../components/ConnectButton";
 const ConnectWallet = () => {
     return (
         <>
@@ -26,81 +24,7 @@ const ConnectWallet = () => {
                             you don’t have one
                         </p>
                         <div className="flex flex-col mt-5 space-y-3">
-                            <button className="border border-[#F5F5F50D] w-[400px] flex justify-between py-5 px-3 rounded-lg">
-                                <p>
-                                    <img
-                                        className="inline mr-2"
-                                        src={argent}
-                                        alt="argent"
-                                    />{" "}
-                                    Argent
-                                </p>
-                                <svg
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M4.5 12L19.5 12M19.5 12L13.875 6M19.5 12L13.875 18"
-                                        stroke="#808080"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
-                            </button>
-                            <button className="border border-[#F5F5F50D] w-[400px] flex justify-between py-5 px-3 rounded-lg">
-                                <p>
-                                    <img
-                                        className="inline mr-2"
-                                        src={braavos}
-                                        alt="braavos"
-                                    />{" "}
-                                    Braavos
-                                </p>
-                                <svg
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M4.5 12L19.5 12M19.5 12L13.875 6M19.5 12L13.875 18"
-                                        stroke="#808080"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
-                            </button>
-                            <button className="border border-[#F5F5F50D] w-[400px] flex justify-between py-5 px-3 rounded-lg">
-                                <p>
-                                    <img
-                                        className="inline mr-2"
-                                        src={metamask}
-                                        alt="metamask"
-                                    />{" "}
-                                    Metamask
-                                </p>
-                                <svg
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M4.5 12L19.5 12M19.5 12L13.875 6M19.5 12L13.875 18"
-                                        stroke="#808080"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
-                            </button>
+                            <ConnectButton />
                         </div>
                         <p className="mt-5 text-[#808080] text-center">
                             By connecting wallet you agree to our{" "}
