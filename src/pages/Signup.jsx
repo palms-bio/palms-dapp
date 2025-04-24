@@ -25,15 +25,20 @@ const Signup = () => {
                             className="w-[414px] py-4 px-2 bg-[#F5F5F50D] text-[#808080] rounded-xl mt-5"
                             type="email"
                             placeholder="email"
+                            required
                         />
                         <input
                             className="w-[414px] py-4 px-2 bg-[#F5F5F50D] text-[#808080] rounded-xl mt-5"
                             type="password"
                             placeholder="password"
+                            required
                         />
-                        <button className="w-[414px] py-4 bg-[#31C61D] mt-12">
+                        <a
+                            className="w-[414px] py-4 bg-[#31C61D] mt-12 text-center"
+                            href="/connect"
+                        >
                             Register
-                        </button>
+                        </a>
                         <p className="text-[#808080] font-albertSans mt-5">
                             Already have an account?{" "}
                             <a href="/login" className="text-white">

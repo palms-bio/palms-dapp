@@ -24,9 +24,12 @@ const HowItWorks = () => {
                         bio-waste disposal. It will measure your contribution
                         and give rewards based on it.
                     </p>
-                    <button className="inline-block bg-[#31C61D] w-[243px] h-[60px] text-white rounded-xl">
+                    <a
+                        className="inline-block bg-[#31C61D] w-[243px] text-white rounded-xl text-center py-5"
+                        href="/getdigester"
+                    >
                         Order Now
-                    </button>
+                    </a>
                     <p className="text-[#FFFFFF80]">
                         <span className="text-white">$99 </span>per Digester
                     </p>

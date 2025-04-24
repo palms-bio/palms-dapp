@@ -1,13 +1,19 @@
 import React from "react";
+import { useAccount, useBalance } from "@starknet-react/core";
 
 const AccountCard = () => {
+    const { address } = useAccount();
     return (
         <div className="flex flex-col space-y-4">
             <div className="w-full bg-[#0C3855] p-3 rounded-xl">
                 <div className="flex justify-between items-center">
                     <p className="text-[#FFFFFF80] text-[14px]">Your Balance</p>
                     <p className="border border-white bg-[rgba(0,0,0,0.3) p-1">
-                        0x32...964
+                        {address
+                            ? address.substring(0, 4) +
+                              "..." +
+                              address.substring(address.length - 3)
+                            : "0x32...964"}
                     </p>
                 </div>
                 <div className="mt-6">

@@ -10,7 +10,7 @@ function ConnectButton() {
         <div className="w-full h-full">
             <div className="font-medium absolute">
                 {address ? (
-                    <div className="mt-0 flex justify-between items-center">
+                    <div className="mt-0 flex justify-between items-center ">
                         <span>
                             {address.substring(0, 5) +
                                 "..." +
@@ -22,6 +22,12 @@ function ConnectButton() {
                         >
                             Disconnect
                         </button>
+                        <a
+                            href="/getdigester"
+                            className="inline-block text-center text-green-500"
+                        >
+                            Proceed
+                        </a>
                     </div>
                 ) : (
                     <span className="opacity-80 text-lg tracking-wide">

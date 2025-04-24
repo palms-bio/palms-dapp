@@ -8,7 +8,10 @@ const GetDigester = () => {
             <CornerLogo />
             <div className="flex h-screen w-full font-albertSans justify-center items-center">
                 <div className="w-[90%]">
-                    <a href="" className="block text-[#00AEE6] text-right">
+                    <a
+                        href="/dashboard"
+                        className="block text-[#00AEE6] text-right"
+                    >
                         {" "}
                         Later{" "}
                         <svg
@@ -44,9 +47,12 @@ const GetDigester = () => {
                                     your contribution and give rewards based on
                                     it.
                                 </p>
-                                <button className="w-[243px] py-4 bg-[#31C61D] rounded-xl">
+                                <a
+                                    className="w-[243px] py-4 bg-[#31C61D] rounded-xl text-center"
+                                    href="/dashboard"
+                                >
                                     Order Now
-                                </button>
+                                </a>
                                 <p className="text-[#FFFFFF80]">
                                     <span className="text-white">$99 </span>
                                     per Digester
