@@ -1,5 +1,5 @@
 import React from "react";
-import bioDigester from "../assets/bioDigester.png";
+import bioDigester from "../assets/BioDigester.png";
 
 const HowItWorks = () => {
     return (
