@@ -4,7 +4,7 @@ import { Beaker, Gauge, Leaf, User } from "lucide-react";
 import Activities from "./dashboard-ui/Activities";
 const Dashboard = () => {
     return (
-        <div className="border border-[#F5F5F50D] py-12 px-8 w-full">
+        <div className="py-5 px-6 w-full h-screen ">
             <h1>
                 Welcome, <span className="text-[24px]">MUJAHID</span>
             </h1>
@@ -12,10 +12,10 @@ const Dashboard = () => {
                 <img
                     src={dashboardGraph}
                     alt="dash-graph"
-                    className="block w-[584px]"
+                    className="block w-8/12"
                 />
-                <div className="flex flex-col space-y-3">
-                    <div className="p-3 bg-[#081E36] w-[230px] h-[90px]">
+                <div className="flex flex-col space-y-3 w-full">
+                    <div className="p-3 bg-[#081E36] h-[90px]">
                         <p className="text-[14px] text-[#F5F5F540]">Volume</p>
                         <div className="flex space-x-4 mt-1">
                             <div className="flex bg-[#F5F5F50D] items-center justify-center w-[42px] h-[42px]">
@@ -26,7 +26,7 @@ const Dashboard = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="p-3 bg-[#081E36] w-[230px] h-[88px]">
+                    <div className="p-3 bg-[#081E36]  h-[88px]">
                         <p className="text-[14px] text-[#F5F5F540]">Pressure</p>
                         <div className="flex space-x-4 mt-1">
                             <div className="flex bg-[#F5F5F50D] items-center justify-center w-[42px] h-[42px]">
@@ -37,7 +37,7 @@ const Dashboard = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="p-3 bg-[#081E36] w-[230px] h-[88px]">
+                    <div className="p-3 bg-[#081E36]  h-[88px]">
                         <p className="text-[14px] text-[#F5F5F540]">Purity</p>
                         <div className="flex space-x-4 mt-1">
                             <div className="flex bg-[#F5F5F50D] items-center justify-center w-[42px] h-[42px]">
@@ -50,7 +50,11 @@ const Dashboard = () => {
                     </div>
                 </div>
             </div>
-            <Activities />
+
+            <div className="pb-44">
+                <Activities />
+            </div>
+  
         </div>
     );
 };

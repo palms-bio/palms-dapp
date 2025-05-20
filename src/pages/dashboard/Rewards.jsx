@@ -99,7 +99,7 @@ const RewardsTable = () => {
     const headers = cleanedData.length > 0 ? Object.keys(cleanedData[0]) : [];
 
     return (
-        <div className="overflow-x-auto mt-5">
+        <div className="overflow-x-auto mt-5 pt-3 pb-[500px]">
             <table className="table-auto w-full ">
                 <thead>
                     <tr>
@@ -134,7 +134,7 @@ const RewardsTable = () => {
 
 const Rewards = () => {
     return (
-        <div className="p-5">
+        <div className="p-5 hscreen">
             <div className="flex space-x-4">
                 <img src={rewardsGraph} alt="" className="block w-full" />
                 <div className="bg-gradient-primary pt-20 pb-2 px-5">
@@ -155,7 +155,7 @@ const Rewards = () => {
                     </div>
                 </div>
             </div>
-            <div className="bg-[#081E36] py-4 px-3 w-full h-[100vh]">
+            <div className="bg-[#081E36] py-4 px-3 w-full h-[100vh] ">
                 <h1 className="text-[14px] text-[#F5F5F540]">History</h1>
                 <RewardsTable />
             </div>

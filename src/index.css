@@ -14,7 +14,7 @@ body {
     background-color: #07192c;
     overflow-x: hidden;
     width: 100%;
-    min-height: 100vh;
+    
 }
 
 .gradient-bg {
@@ -23,6 +23,11 @@ body {
         #31c61d 4.11%,
         rgba(0, 174, 230, 0.901961) 88.82%
     );
+}
+
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 /* Responsive images */

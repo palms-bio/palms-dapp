@@ -4,7 +4,7 @@ import { useAccount, useBalance } from "@starknet-react/core";
 const AccountCard = () => {
     const { address } = useAccount();
     return (
-        <div className="flex flex-col space-y-4">
+        <div className="flex w-full flex-col space-y-4">
             <div className="w-full bg-[#0C3855] p-3 rounded-xl">
                 <div className="flex justify-between items-center">
                     <p className="text-[#FFFFFF80] text-[14px]">Your Balance</p>

@@ -17,7 +17,7 @@ const marketPlaceItems = [
 
 const Marketplace = () => {
     return (
-        <div className="p-5">
+        <div className="px-5 pt-10 h-screen">
             <div className="flex space-x-4 items-center">
                 <LiveSales />
                 <TokenPrice />
@@ -37,7 +37,7 @@ const Marketplace = () => {
                         </div>
                     </div>
                 </div>
-                <div className="grid grid-cols-3 gap-4 mt-4">
+                <div className="grid grid-cols-3 gap-4 mt-4 pb-44">
                     {marketPlaceItems.map((item) => (
                         <div className="flex flex-col w-full ">
                             <img

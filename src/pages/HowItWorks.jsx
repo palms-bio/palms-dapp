@@ -5,7 +5,7 @@ const HowItWorks = () => {
     return (
         <>
             <CornerLogo />
-            <div className="flex h-screen w-full font-albertSans justify-center items-center">
+            <div className="flex h-screen w-full mt-28 mb-24 font-albertSans justify-center items-center">
                 <div className="w-[90%] ">
                     <div className="flex justify-between mb-3 items-center">
                         <h3 className="bg-[linear-gradient(210.39deg,#31c61d_4.11%,rgba(0,174,230,0.901961)_88.82%)] text-transparent bg-clip-text text-[24px]">
