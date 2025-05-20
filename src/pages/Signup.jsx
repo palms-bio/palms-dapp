@@ -6,7 +6,7 @@ const Signup = () => {
     return (
         <>
             <CornerLogo />
-            <div className="flex h-screen w-full font-albertSans">
+            <div className="flex h-screen w-full justify-center mt-24 mb-24  font-albertSans">
                 <img src={field} alt="" className="h-screen object-cover" />
                 <div className="flex flex-col space-y-12 justify-center px-12">
                     <div>

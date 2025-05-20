@@ -6,7 +6,7 @@ const ConnectWallet = () => {
         <>
             <CornerLogo />
 
-            <div className="flex justify-center items-center h-screen font-albertSans">
+            <div className="flex justify-center mt-28 mb-24 items-center h-screen font-albertSans">
                 <div>
                     <button className="text-[#808080] text-right mb-8 inline-block w-[464px]">
                         Skip
